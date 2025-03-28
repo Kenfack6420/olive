@@ -119,17 +119,20 @@
             position: relative;
         }
         h1{
-        font-size: 25px;
-        letter-spacing: -2px;
+        font-size: 20px;
+        letter-spacing: 4px;
         background-color: black;
         padding: 7px 29px;
         color: #fff;
         border-radius: 15px;
         font-family:'Arial', sans-serif;
-        width: 400PX;
+        width: 300PX;
         text-transform: uppercase;
     text-align: center;
     box-shadow: 0px 0px 15px 7px;
+    
+    
+    
 }
 .home {
     display:flex;
@@ -224,8 +227,9 @@
     padding: 5px;
 }
 .build div {
-    width: 290%;
-    font-size: 25px;
+    width: 170%;
+    font-size: 22px;
+    color: black;
 }
 .build div p{
     margin-bottom: 10px;
@@ -237,9 +241,9 @@
         h4{
             color:white;
             font-size: 30px;
-            letter-spacing: -2px;
+            letter-spacing: -0px;
             position: center;
-            width: 400px;
+            width: 340px;
             background-color: black;
             align-items: center;
             justify-content:center ;
@@ -249,18 +253,18 @@
             box-shadow: 0px 0px 15px 7px;
         
         }
-        .menu {
+        .row {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin: 67px;
+            margin: 10px;
             background-color: white;
-            background-image: url('assets/orly3.jpeg') ;
+            background-image: url('assets/orly1.jpeg') ;
             padding: 1px;
             box-shadow: 0px 0px 35px 18px
 
         }
-        .menu-item {
+        .col-2{
             background: black;
             border: 10px solid #ddd;
             border-radius: 5px;
@@ -276,7 +280,23 @@
             flex-wrap: wrap;
             justify-content: space-between;
         }
-        .menu-item img {
+        .col-3{
+            background: black;
+            border: 10px solid #ddd;
+            border-radius: 5px;
+            margin: 18px;
+            padding: 6px;
+            width: 240px;
+            text-align: center;
+            box-shadow: 2px 2px 8px rgba(226, 214, 214, 0.3);
+            transition: transform 0.3s;
+            color: bisque;
+            border-radius: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .col-2 img {
             width: 90%;
             height: auto;
             border-radius: 13px;
@@ -284,7 +304,21 @@
             height: auto;
             max-width: 90%;
         }
-        .menu-item h3 {
+        .col-3 img {
+            width: 90%;
+            height: auto;
+            border-radius: 13px;
+            box-shadow: 2PX 2PX 4PX 4PX rgb(121, 226, 126);
+            height: auto;
+            max-width: 98%;
+        }
+        .col-2 h3 {
+            margin: 25px 0;
+            color: #ddd;
+            PADDING:10px;
+            width: 1;
+        }
+        .col-3 h3 {
             margin: 25px 0;
             color: #ddd;
             PADDING:10px;
@@ -300,7 +334,7 @@
             text-decoration: none;
             margin: 1px auto;
             display: block;
-            width: 70%;
+            width: 87%;
             margin-top: 1px;
             display: flex;
             justify-content: center;
@@ -311,12 +345,19 @@
 
         }
         @media (max-width: 500px) {
-            .menu-item {
-                width:90%; /* Prend toute la largeur sur mobile */
+            .col-2 {
+                width:50%; /*  modifier la largeur du Col2 en 50% */
+                margin: 15px 0; /* Réduit la marge */
+            }
+            .col-3 {
+                width:50%; /*  modifier la largeur du Col2 en 50% */
                 margin: 25px 0; /* Réduit la marge */
             }
         }
-        .menu-item:hover {
+        .col-2:hover {
+            transform: scale(1.05); /* Effet d'agrandissement au survol */
+        }
+        .col-3:hover {
             transform: scale(1.05); /* Effet d'agrandissement au survol */
         }
         footer {
@@ -425,51 +466,55 @@
     </div>
 </section>
 <!--build-->
-<h4>Découvrez nos menus du jour !</h4>
-<div class="menu">
-    <div class="menu-item">
+<h4>Découvrez nos menus du jour !</h4><br>
+<div class="row">
+    <div class="col-2">
         <img src="assets/k1.JPEG" alt="#">
         <h3>Lundi</h3>
         <p>- Riz Parfumé Sauce Tomate Plantain Mur LE Tout Avec de la bonne viande et du poisson Accompagné du Poulet.<br><br></p>
         <p>Prix: 1000 FCFA</p>
         <a href="https://wa.me/+237699676863?" class="order-button">Commander</a>
     </div>
-    <div class="menu-item">
+    <div class="col-2">
         <img src="assets/k3.JPEG" alt="#">
         <h3>Mardi</h3>
         <p>- Koki Plantain Mur <br> - Riz Sauce Tomate. <br><br>NB: Le meilleur des resto au monde<br><br> </p>
         <p>Prix: 1000 FCFA</p>
         <a href="https://wa.me/+237699676863?" class="order-button">Commander</a>
     </div>
-    <div class="menu-item">
+    <div class="col-2">
         <img src="assets/k2.JPEG" alt="#">
         <h3>Mercredi</h3>
         <p>- Ndolais Plantain Mur <br><br> - Riz Sauce Arachide viande-Poisson-Poulet.<br><br><br></p>
         <p>Prix: 1000 FCFA</p>
         <a href="https://wa.me/+237699676863?" class="order-button">Commander</a>
     </div>
-    <div class="menu-item">
+</div>
+<div class="row">
+    <div class="col-2">
         <img src="assets/k4.JPEG" alt="#">
         <h3>Jeudi</h3>
         <p>- Okok Manioc<br> - Riz Sauce Arachide<br><br> NB: viande-Poisson-Poulet.<br><br><br></p>
         <p>Prix: 1000 FCFA</p>
         <a href="https://wa.me/+237699676863?" class="order-button">Commander</a>
     </div>
-    <div class="menu-item">
+    <div class="col-2">
         <img src="assets/k6.JPEG" alt="#">
         <h3>Vendredi</h3>
         <p>- Rotis de Pommes<br> - Bananes Malaxés <br>- Riz Sauce Tomate avec de la viande-poisson-poulet.<br><br></p>
         <p>Prix: 1000 FCFA</p>
         <a href="https://wa.me/+237699676863?" class="order-button">Commander</a>
     </div>
-    <div class="menu-item">
+</div>
+<div class="row">
+    <div class="col-2">
         <img src="assets/k7.JPEG" alt="#">
         <h3>Samedi</h3>
         <p>- Couscous Légumes & Sauce Jaune ET Ero. <br>- Riz Sauce Tomate Poulet-viande-Poisson.<br><br></p>
         <p>Prix: 1000 FCFA</p>
         <a href="https://wa.me/+237699676863?" class="order-button">Commander</a>
     </div>
-    <div class="menu-item">
+    <div class="col-2">
         <img src="assets/k5.JPEG" alt="#">
         <h3>Dimanche</h3>
         <p>- Bouillon De Pates De Boeuf & Chair Peau légumes Et Taro.<br><br><br></p>
