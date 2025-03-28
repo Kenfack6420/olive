@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+/*STYLES par defaut pour tous les écrans*/
+body {
+    font-size: 16px;
+}
+/*STYLES par defaut pour tous les écrans de moins de 768px */
+@media (max-width:768px) {
+    body {
+        font-size: 14px;
+    }
+    }
+    /*STYLES pour les écrans de plus de 768px */
+    @media (min-width:768px) {
+        body {
+            font-size: 14px;
+        }
+        }
+        /* STYLES pour les écrans de plus de 992px */
+        @media (min-width:992px) {
+            body {
+                font-size: 16px;
+            }
+            }
+            /* STYLES pour les écrans de plus de 1200px */
+            @media (min-width:1200px) {
+                body {
+                    font-size: 18px;
+                }
+                }
+                /* STYLES pour les écrans de plus de 1920px */
+                @media (min-width:1920px) {
+                    body {
+                        font-size: 20px;
+                    }
+                    }
+                    /* STYLES pour les écrans de plus de 2560px */
+                    @media (min-width:2560px) {
+                        body {
+                            font-size: 22px;
+                        }
+                        }
+                        /* STYLES pour les écrans de plus de 3840px */
+                        @media (min-width:3840px) {
+                            body {
+                                font-size: 24px;
+                            }
+                            }
+                            /* STYLES pour les écrans de plus de 5120px */
+                            @media (min-width:5120px) {
+                                body {
+                                    font-size: 26px;
+                                }
+                                }
+                                /* STYLES pour les écrans de plus de 7680px */
+                                @media (min-width:7680px) {
+                                    body {
+                                        font-size: 28px;
+                                    }
+                                    }
+                                    /* STYLES pour les écrans de plus de 10240px */
+                                    @media (min-width:10240px) {
+                                        body {
+                                            font-size: 30px;
+                                        }
+                                        }
+                                        /* STYLES pour les écrans de plus de 15360px */
+                                        @media (min-width:15360px) {
+                                            body {
+                                                font-size: 32px;
+                                            }
+                                            }
+                                            /* STYLES pour les écrans de plus de 20480px */
+                                            @media (min-width:20480px) {
+                                                body {
+                                                    font-size: 34px;
+                                                }
+                                                }
+                                                /* STYLES pour les écrans de plus de 30720px */
+                                                @media (min-width:30720px) {
+                                                    body {
+                                                        font-size: 36px;
+                                                    }
+                                                    }
+                                                    /* STYLES pour les écrans de plus de 40960px */
+                                                    @media (min-width:40960px) {
+                                                        body {
+                                                            font-size: 38px;
+                                                        }
+                                                        }
+                                                        .menu {
+                                                            display: flex;
+                                                            flex-wrap: wrap;
+                                                            justify-content: center;
+                                                            margin: 50px;
+                                                            background-color: white;
+                                                            background-image: url('assets/orly3.JPEG') ;
+                                                            padding: 35px;
+                                                
+                                                        }
+                                                        .menu-item {
+                                                            background: black;
+                                                            border: 10px solid #ddd;
+                                                            border-radius: 5px;
+                                                            margin: 2px;
+                                                            padding: 6px;
+                                                            width: 200px;
+                                                            text-align: center;
+                                                            box-shadow: 2px 2px 8px rgba(226, 214, 214, 0.1);
+                                                            transition: transform 0.3s;
+                                                            color: bisque;
+                                                            border-radius: 15px;
+                                                            align-items: center;
+                                                            flex-wrap: wrap;
+                                                            justify-content: space-between;
+                                                        }
+                                                        .menu-item img {
+                                                            width: 90%;
+                                                            height: auto;
+                                                            border-radius: 13px;
+                                                            box-shadow: 2PX 2PX 4PX 4PX rgb(121, 226, 126);
+                                                            height: auto;
+                                                            max-width: 90%;
+                                                        }
+                                                        .menu-item h3 {
+                                                            margin: 25px 0;
+                                                            color: #ddd;
+                                                            PADDING:15px;
+                                                            width: 4;
+                                                        }

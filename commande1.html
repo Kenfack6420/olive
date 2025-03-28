@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css bootstrap/bootstrap.min.css">
+    <title>Commande</title>
+    <style>
+        /* Importer la police Lobster */
+        @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+        body {
+            font-family: 'Lobster', cursive; /* Appliquer la police Lobster */
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: black;
+        }
+        header {
+            background-color: #555427;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input, .form-container select, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 600px) {
+            .form-container {
+                margin: 15px; /* Réduit la marge sur les petits écrans */
+                padding: 15px; /* Réduit le rembourrage */
+            }
+            .form-container input, .form-container select, .form-container textarea {
+                padding: 8px; /* Réduit le rembourrage des champs */
+            }
+            .submit-button {
+                padding: 8px; /* Réduit le rembourrage du bouton */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Passer votre Commande</h1>
+</header>
+
+<div class="form-container">
+    <form id="orderForm">
+        <input type="text" id="name" placeholder="Votre Nom" required>
+        <input type="text" id="menu" placeholder="Choix du Menu" required>
+        <input type="text" id="country" placeholder="Pays" required>
+        <input type="text" id="city" placeholder="Ville" required>
+        <input type="text" id="district" placeholder="Quartier" required>
+        <textarea id="comment" placeholder="Laissez votre commentaire..." rows="4"></textarea>
+        <button type="submit" class="submit-button">Envoyer la Commande</button>
+    </form>
+</div>
+
+<script>
+    // Récupérer les paramètres de l'URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const plat = urlParams.get('plat');
+    const prix = urlParams.get('prix');
+
+    // Vérifier si les paramètres ont été récupérés correctement
+    console.log("Nom:", name);  // Affiche le plat dans la console
+    console.log("Pays:", prix);   // Affiche le prix dans la console
+    console.log("Prix:", prix);
+    console.log("Quartier:", Discrit);
+    console.log("Ville:", city);
+    console.log("Commentaire:", comment);
+    console.log("Menu:", plat);
+
+    // Remplir les champs de formulaire
+    document.getElementById('menu').value = ${plat} - ${prix} FCFA;
+
+    // Gérer l'envoi du formulaire
+    document.getElementById('orderForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Empêche le rechargement de la page
+
+        const name = document.getElementById('name').value;
+        const country = document.getElementById('country').value;
+        const city = document.getElementById('city').value;
+        const district = document.getElementById('district').value;
+        const comment = document.getElementById('comment').value;
+        // Construire le message
+
+
+        // Créer le message à envoyer via WhatsApp
+        const message = 'Nouvelle Commande:\n' +
+                        'Nom: ${name}\n' +
+                        'Menu: ${plat}\n' +
+                        'Prix: ${prix} FCFA\n' +
+                        'Pays: ${country}\n' +
+                        'Ville: ${city}\n' +
+                        'Quartier: ${district}\n' +
+                        'Commentaire: ${comment}';
+    // Afficher une alerte de prévisualisation
+    if (confirm(Êtes-vous sûr de vouloir envoyer ce message ?\n\n${message}))' {
+
+        const whatsappUrl = 'https://wa.me/+237696492029?text=${encodeURIComponent(message)}'; // Remplacez par votre numéro
+
+        // Rediriger vers WhatsApp
+        window.location.href = whatsappUrl;
+    });
+</script>
+<script src="js/jquery.min.js"></script> <!-- jQuery (nécessaire pour Bootstrap) -->
+<script src="js/popper.min.js"></script> <!-- Popper.js (nécessaire pour Bootstrap) -->
+<script src="js/bootstrap.min.js"></script> <!-- JS Bootstrap -->
+</body>
+</html>

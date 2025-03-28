@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style_mobile.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="style_tablet.css" media="(max-width: 768px)">
+    <title>Orly-Resto</title>
+    <style>
+        body {
+            font-family:'Arial', sans-serif; 
+            margin: 0;
+            padding: 8px;
+            background-color: rgb(41, 131, 14);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .home {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(42, 100, 24, 0.1), rgba(0,0,0,0.7)), url(assets/orly3.jpeg);
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 28px;
+    padding: 80px;
+}
+.home .logo{
+    position: absolute;
+    top: -310px;
+    left: 7px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 0px;
+    width: 140px;
+    box-shadow: 0px 0px 14px 7px;
+}
+.home .logo:after{
+    content: "";
+    position: absolute;
+    background-color: #FFF;
+    height: 0px;
+    width: 100px;
+    bottom: -2px;
+    left: 0;
+}
+.home {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(42, 100, 24, 0.1), rgba(0,0,0,0.7)), url(assets/orly3.jpeg);
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 28px;
+    padding: 80px;
+}
+.home .logo{
+    position: absolute;
+    top: -390px;
+    left: 18px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 20px;
+    WIDTH:450px;
+    MARGIN-TOP:319PX;   
+    LEFT:-120PX;
+    BOX-shadow:0 4PX 8PX rgba(0,0,0,0.5);
+}
+.home .logo:after{
+    content: "";
+    position: absolute;
+    background-color: #FFF;
+    height: 0px;
+    width: 100px;
+    bottom: -2px;
+    left: 0;
+}
+.home h1{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #26a226;
+    border-radius: 6px;
+    padding: 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+.logo-image{
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    background-color: #FFF;
+    border-radius: 12px;
+}
+
+        header {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: black;
+            padding: 80px;
+            height: 80px;
+            text-align: center;
+            border-radius: 12px;
+            width: 16px 7px 15px 15px;
+            font-size: 19px;
+            background-position: center;
+            position: relative;
+        }
+        h1{
+        font-size: 25px;
+        letter-spacing: -2px;
+        background-color: black;
+        padding: 7px 29px;
+        color: #fff;
+        border-radius: 15px;
+        font-family:'Arial', sans-serif;
+        width: 400PX;
+        text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0px 0px 15px 7px;
+}
+.home {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(42, 100, 24, 0.1), rgba(0,0,0,0.7)), url(assets/orly4.jpeg);
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    padding: 150px;
+    box-shadow: 0px 0px 17px 8px;
+}
+.home .logo{
+    position: absolute;
+    top: -310px;
+    left: 7px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 0px;
+    width: 134px;
+    box-shadow: 0px 0px 14px 7px;
+}
+.home .logo:after{
+    content: "";
+    position: absolute;
+    background-color: #FFF;
+    height: 0px;
+    width: 100px;
+    bottom: -2px;
+    left: 0;
+}
+.home h1{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    WIDTH:269PX;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    BOX-shadow:0 4PX 8PX rgba(0,0,0,0.5);
+}
+
+.logo-image{
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+    background-color: #FFF;
+    border-radius: 12px;
+    BOX-shadow:0 4PX 8PX rgba(0,0,0,0.5);
+}
+        h3{
+            color: #f3fcf3;
+            position: center;
+            font-size: 23px;
+            letter-spacing: -0px;
+            background-color: #006400;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-family:'Arial', sans-serif;
+        }
+        h5{
+            color: #d6ac1f;
+            position: center;
+            font-size: 20px;
+            letter-spacing: -3px;
+            background-color: #151615;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-family:'Arial', sans-serif;
+        }
+        /*build */
+.build {
+    display: flex;
+    padding: -1px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(41, 131, 14);
+
+}
+.build img{
+    width: 32%;
+    border-radius: 15px;
+    background-color: rgba(20, 20, 20, 0);
+    padding: 5px;
+}
+.build div {
+    width: 290%;
+    font-size: 25px;
+}
+.build div p{
+    margin-bottom: 10px;
+    line-height: 25px;
+    color: white;
+    font-size: 2px;
+    text-decoration:2;
+}
+        h4{
+            color:white;
+            font-size: 30px;
+            letter-spacing: -2px;
+            position: center;
+            width: 400px;
+            background-color: black;
+            align-items: center;
+            justify-content:center ;
+            position: CENTER;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px 7px;
+        
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 67px;
+            background-color: white;
+            background-image: url('assets/orly3.JPEG') ;
+            padding: 1px;
+            box-shadow: 0px 0px 35px 18px
+
+        }
+        .menu-item {
+            background: black;
+            border: 10px solid #ddd;
+            border-radius: 5px;
+            margin: 18px;
+            padding: 6px;
+            width: 240px;
+            text-align: center;
+            box-shadow: 2px 2px 8px rgba(226, 214, 214, 0.3);
+            transition: transform 0.3s;
+            color: bisque;
+            border-radius: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .menu-item img {
+            width: 90%;
+            height: auto;
+            border-radius: 13px;
+            box-shadow: 2PX 2PX 4PX 4PX rgb(121, 226, 126);
+            height: auto;
+            max-width: 90%;
+        }
+        .menu-item h3 {
+            margin: 25px 0;
+            color: #ddd;
+            PADDING:10px;
+            width: 1;
+        }
+        .order-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 1px auto;
+            display: block;
+            width: 70%;
+            margin-top: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .order-button:hover {
+            background-color: #45a049;
+
+        }
+        @media (max-width: 500px) {
+            .menu-item {
+                width:90%; /* Prend toute la largeur sur mobile */
+                margin: 25px 0; /* Réduit la marge */
+            }
+        }
+        .menu-item:hover {
+            transform: scale(1.05); /* Effet d'agrandissement au survol */
+        }
+        footer {
+    background-color: #006400;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 13px 7px
+}
+.glass_foot{
+    left: 55px;
+}
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.social-links li {
+    margin: 0 15px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff9800; /* Couleur lors du survol */
+}
+
+.subscribe {
+    margin-top: 15px;
+}
+
+.subscribe input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.subscribe button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe button:hover {
+    background-color: #e68900; /* Couleur lors du survol */
+}
+.social-links, .partner-logos {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.social-links li, .partner-logos li {
+    margin: 0 15px;
+}
+
+.social-links a, .partner-logos a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover, .partner-logos a:hover {
+    transform: scale(1.1); /* Agrandir légèrement lors du survol */
+}
+
+.social-links img, .partner-logos img {
+    width: 40px; /* Largeur des logos */
+    height: auto; /* Garder la proportion */
+}
+
+    </style>
+</head>
+<body>
+    <!-- home -->
+    <section class="home">
+        <a href="#" class="logo"><img src="assets/Capture3.JPEG" class="img-custom img-fluid" alt="Eco_Habitat" class="logo-image"></a>
+        <h1>Café & Resto Chez Orly</h1>
+    </section>
+    <!--home-->
+
+
+<!--build-->
+<section class="build" id="build">
+    <div>
+        <p><br><h1>Bienvenue chez Les Délices d'Olive <br><br></h1> 
+            <br>* Savourez des plats faits maison le tout préparés avec des ingrédients frais et de saison.<br> <br> * Découvrez Chaque jour un nouveau menu qui éveillera vos sens et ravira vos papilles.<br><br> * Ne manquez pas nos délices exclusifs du jour conçus pour vous offrir une expérience culinaire inoubliable. <br><br>* Plongez dans notre univers de saveurs et partagez un moment de plaisir avec vos proches !<br><br></p>
+    </div>
+</section>
+<!--build-->
+<h4>Découvrez nos menus du jour !</h4>
+<div class="menu">
+    <div class="menu-item">
+        <img src="assets/k1.JPEG" alt="#">
+        <h3>Lundi</h3>
+        <p>- Riz Parfumé Sauce Tomate Plantain Mur LE Tout Avec de la bonne viande et du poisson Accompagné du Poulet.<br><br></p>
+        <p>Prix: 1000 FCFA</p>
+        <a href="https://wa.me/+237699676863?" class="order-button">Commander</a>
+    </div>
+    <div class="menu-item">
+        <img src="assets/k3.JPEG" alt="#">
+        <h3>Mardi</h3>
+        <p>- Koki Plantain Mur <br> - Riz Sauce Tomate. <br><br>NB: Le meilleur des resto au monde<br><br> </p>
+        <p>Prix: 1000 FCFA</p>
+        <a href="https://wa.me/+237699676863?" class="order-button">Commander</a>
+    </div>
+    <div class="menu-item">
+        <img src="assets/k2.JPEG" alt="#">
+        <h3>Mercredi</h3>
+        <p>- Ndolais Plantain Mur <br><br> - Riz Sauce Arachide viande-Poisson-Poulet.<br><br><br></p>
+        <p>Prix: 1000 FCFA</p>
+        <a href="https://wa.me/+237699676863?" class="order-button">Commander</a>
+    </div>
+    <div class="menu-item">
+        <img src="assets/k4.JPEG" alt="#">
+        <h3>Jeudi</h3>
+        <p>- Okok Manioc<br> - Riz Sauce Arachide<br><br> NB: viande-Poisson-Poulet.<br><br><br></p>
+        <p>Prix: 1000 FCFA</p>
+        <a href="https://wa.me/+237699676863?" class="order-button">Commander</a>
+    </div>
+    <div class="menu-item">
+        <img src="assets/k6.JPEG" alt="#">
+        <h3>Vendredi</h3>
+        <p>- Rotis de Pommes<br> - Bananes Malaxés <br>- Riz Sauce Tomate avec de la viande-poisson-poulet.<br><br></p>
+        <p>Prix: 1000 FCFA</p>
+        <a href="https://wa.me/+237699676863?" class="order-button">Commander</a>
+    </div>
+    <div class="menu-item">
+        <img src="assets/k7.JPEG" alt="#">
+        <h3>Samedi</h3>
+        <p>- Couscous Légumes & Sauce Jaune ET Ero. <br>- Riz Sauce Tomate Poulet-viande-Poisson.<br><br></p>
+        <p>Prix: 1000 FCFA</p>
+        <a href="https://wa.me/+237699676863?" class="order-button">Commander</a>
+    </div>
+    <div class="menu-item">
+        <img src="assets/k5.JPEG" alt="#">
+        <h3>Dimanche</h3>
+        <p>- Bouillon De Pates De Boeuf & Chair Peau légumes Et Taro.<br><br><br></p>
+        <p>Prix: 1000 FCFA</p>
+        <a href="https://wa.me/+237699676863?" class="order-button">Commander</a>
+    </div>
+</div>
+
+<footer>
+    <div class="glass_foot">
+    <h2>Suivez-nous sur les réseaux sociaux </h2>
+    <ul class="social-links">
+        <li><a href="https://www.facebook.com" target="_blank"><img src="assets/logoFacebook.jpg" alt="Facebook"></a></li>
+        <li><a href="https://www.twitter.com" target="_blank">🐦</a></li>
+        <li><a href="https://www.instagram.com" target="_blank">📸</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank">💼</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">📹</a></li>s
+    </ul>
+        <div class="subscribe">
+            <h3>Abonnez-vous à notre newsletter</h3>
+            <input type="email" placeholder="Votre email" required>
+            <button type="submit">S'abonner</button>
+        </div>
+    </div>
+    <p>&copy; 2024 Orly_Fashion. Tous droits réservés.</p>
+</footer>
+<script src="js/jquery.min.js"></script> <!-- jQuery (nécessaire pour Bootstrap) -->
+<script src="js/popper.min.js"></script> <!-- Popper.js (nécessaire pour Bootstrap) -->
+<script src="js/bootstrap.min.js"></script> <!-- JS Bootstrap -->
+</body>
+</html>

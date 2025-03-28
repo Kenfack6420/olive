@@ -1,0 +1,13 @@
+@mixin rounded($radius: 5px) {
+    border-radius: $radius;
+    background-color: 
+  }
+  
+  .button {
+    @include rounded(10px);
+    padding: 10px 20px;
+  }
+  .card {
+    @include rounded(10px);
+  }
+  

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css bootstrap/bootstrap.min.css">
+    <title>Commande</title>
+    <style>
+        /* Importer la police Lobster */
+        @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+        
+.popup-commande {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 500px;
+  height: 600px;
+  display: none;
+  z-index: 1000;
+}
+
+/* Le titre de la pop-up */
+.popup-commande h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Les champs du formulaire */
+.champ-formulaire {
+  margin-bottom: 20px;
+}
+
+.champ-formulaire label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.champ-formulaire input, .champ-formulaire select, .champ-formulaire textarea {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Le bouton d'envoi */
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>Passer votre Commande</h1>
+    </header>
+    <!-- La pop-up -->
+    <div class="popup-commande">
+    <div id="popup-commande">
+    <!-- Le titre de la pop-up -->
+    <h2>Votre commande</h2>
+    
+    <!-- Le formulaire de commande -->
+    <form id="formulaire-commande">
+      <!-- Les champs du formulaire -->
+      <div class="champ-formulaire">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
+      
+      <div class="champ-formulaire">
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required>
+      </div>
+      
+      <div class="champ-formulaire">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="champ-formulaire">
+        <label for="adresse">Adresse :</label>
+        <input type="text" id="adresse" name="adresse" required>
+      </div>
+      
+      <div class="champ-formulaire">
+        <label for="ville">Ville :</label>
+        <input type="text" id="ville" name="ville" required>
+      </div>
+      
+      <div class="champ-formulaire">
+        <label for="code-postal">Code postal :</label>
+        <input type="text" id="code-postal" name="code-postal" required>
+      </div>
+      
+      <div class="champ-formulaire">
+        <label for="produit">Produit :</label>
+        <select id="produit" name="produit" required>
+          <option value="">Sélectionnez un produit</option>
+          <option value="produit1">Produit 1</option>
+          <option value="produit2">Produit 2</option>
+          <option value="produit3">Produit 3</option>
+        </select>
+      </div>
+      
+      <div class="champ-formulaire">
+        <label for="quantite">Quantité :</label>
+        <input type="number" id="quantite" name="quantite" required>
+      </div>
+      
+      <div class="champ-formulaire">
+        <label for="message">Message :</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      
+      <!-- Le bouton d'envoi -->
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+  <script>
+    // Ouvrir la pop-up
+document.getElementById('ouvrir-popup').addEventListener('click', function() {
+  document.getElementById('popup-commande').style.display = 'block';
+});
+
+// Fermer la pop-up
+document.getElementById('popup-commande').addEventListener('click', function(event) {
+  if (event.target === this) {
+    this.style.display = 'none';
+  }
+});
+
+// Envoyer le formulaire
+document.getElementById('formulaire-commande').addEventListener('submit', function(event) {
+  event.preventDefault();
+  // Envoyer les données du formulaire à votre serveur
+  // ...
+});
+ </script>
+</body>
+</html>
