@@ -1,0 +1,114 @@
+/* style_jours.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: rgb(10, 134, 10);
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: white; /* Couleur vive et attirante */
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: black;
+    padding: 10px;
+    background-position: center;
+    position: CENTER;
+}
+
+header p {
+    color: black;
+    font-style: italic;
+}
+
+.jours-semaine {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Force l'affichage en deux colonnes */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.jour {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border-left: 5px solid transparent; /* Ajout d'une bordure latérale pour l'effet flamboyant */
+}
+
+.jour:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.jour h2 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    background-color: black;
+}
+
+.jour p {
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.jour a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green; /* Couleur vive pour les boutons */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.jour a:hover {
+    background-color: #c83e1c;
+}
+
+/* Style flamboyant : couleurs de bordure différentes pour chaque jour */
+.lundi { border-left-color: #2980b9; } /* Bleu */
+.mardi { border-left-color: #27ae60; } /* Vert */
+.mercredi { border-left-color: #f39c12; } /* Orange */
+.jeudi { border-left-color: #d35400; } /* Rouge foncé */
+.vendredi { border-left-color: #8e44ad; } /* Violet */
+.samedi { border-left-color: #1abc9c; } /* Turquoise */
+.dimanche { border-left-color: #c0392b; } /* Rouge */
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30px;
+    color: white;
+    border-top: 1px solid green;
+    background-color: black;
+}
+
+/* Responsivité pour les écrans plus petits (ajustement pour le layout à 2 colonnes) */
+@media (max-width: 600px) {
+    .jours-semaine {
+        grid-template-columns: repeat(2, 1fr); /* Force l'affichage en deux colonnes sur les smartphones */
+    }
+}
