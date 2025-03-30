@@ -67,13 +67,12 @@ header h1 {
 }
 
 footer {
-    background-color: #333;
+    background-color: green;
     color: white;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
 }
-
 /* Media query pour les écrans de smartphones (jusqu'à 768px de largeur) */
 @media screen and (max-width: 768px) {
     .galerie-plats {
